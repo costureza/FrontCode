@@ -1,0 +1,48 @@
+header{
+    display: flex;
+    width: 100%;
+}
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px;
+    margin: 0 auto;
+    width: 100%;
+    max-width:1440px;
+}
+.header_content h1{
+    font-size: 2rem;
+    line-height: 2.753rem;
+    text-transform: uppercase;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    column-gap: 56px;
+}
+.navigation li a,
+.user span
+{
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+}
+.user{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+.user_avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    border: 1px solid var(--secondary);
+}
+.user_avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
