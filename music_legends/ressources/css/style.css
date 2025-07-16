@@ -3,6 +3,7 @@
 @import url(./main.css);
 @import url(./header.css);
 @import url(./media.css);
+@import url(./footer.css);
 
 
 *{
@@ -18,7 +19,9 @@
     --primary:#c0c0c0;
     --secondary: #2ef4cc;
     --tertiary: #f1f0f0;
-    --background:#14061f;
+    --background:#14061f;    
+    --background-light:#200c38;
+
     
 }
 

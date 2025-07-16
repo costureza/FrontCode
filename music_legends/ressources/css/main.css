@@ -10,9 +10,7 @@ body{
     height: 100vh;
 }
 
-.app footer{
-    background: blue;
-}
+
 main {
     flex: 1;
     display: flex;

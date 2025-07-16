@@ -2,6 +2,10 @@ header{
     display: flex;
     width: 100%;
 }
+header nav, header .user{
+    width: 100%;
+    max-width: 330px;
+}
 .header_content{
     display: flex;
     align-items: center;
@@ -46,6 +50,7 @@ header{
 .user{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     column-gap: 16px;
 }
 .user_avatar{
