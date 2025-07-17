@@ -6,6 +6,31 @@ header nav, header .user{
     width: 100%;
     max-width: 330px;
 }
+
+.button_toggle{
+    visibility: hidden;
+    
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 4px;
+
+    background: transparent;
+}
+
+.button_toggle span{
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--primary);
+
+}
+
+.button_toggle span:nth-child(even){
+    width: 18px;
+}
+
 .header_content{
     display: flex;
     align-items: center;
