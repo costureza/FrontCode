@@ -7,10 +7,9 @@ header nav, header .user{
     max-width: 330px;
 }
 
-.button_toggle{    
+#button_toggle{    
     display: none;
     visibility: hidden;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 4px;
@@ -18,15 +17,26 @@ header nav, header .user{
     background: transparent;
 }
 
-.button_toggle span{
+#button_toggle span{
     display: block;
     width: 24px;
     height: 2px;
     background: var(--primary);
+
+    transition: all .6s;
 }
 
-.button_toggle span:nth-child(even){
+#button_toggle span:nth-child(even){
     width: 18px;
+}
+#button_toggle.active span:nth-child(even){
+    opacity: 0;
+}
+#button_toggle.active span:nth-child(1){
+    transform: rotate(45deg) translateY(8px);
+}
+#button_toggle.active span:nth-child(3){
+    transform: rotate(-45deg) translateY(-8px);
 }
 
 .header_content{
@@ -44,21 +54,21 @@ header nav, header .user{
     text-transform: uppercase;
 }
 
-.navigation{
+#navigation{
     display: flex;
     align-items: center;
     column-gap: 56px;
 }
-.navigation li a,
+#navigation li a,
 .user span
 {
     font-size: 1.25rem;
     line-height: 1.25rem;
 }
-.navigation li{
+#navigation li{
     position: relative;
 }
-.navigation li.active::before{
+#navigation li.active::before{
     content: '';
 
     position: absolute;
