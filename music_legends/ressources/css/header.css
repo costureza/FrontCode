@@ -7,10 +7,9 @@ header nav, header .user{
     max-width: 330px;
 }
 
-.button_toggle{
-    visibility: hidden;
-    
+.button_toggle{    
     display: none;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -24,7 +23,6 @@ header nav, header .user{
     width: 24px;
     height: 2px;
     background: var(--primary);
-
 }
 
 .button_toggle span:nth-child(even){

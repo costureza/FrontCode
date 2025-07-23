@@ -29,9 +29,34 @@
         font-size: 87.5%;
         } 
 
+    .button_toggle, .header_content h1, .user{
+        z-index: 3;
+    }
     .button_toggle{
         display: flex;
-        visibility: visible;
+        visibility: visible;        
+    }
+    .navigation{
+        position: fixed;
+        inset: 0;
+
+        width: 100%;
+        z-index: 2;
+        height: 0;
+        overflow: hidden;
+        background: var(--background);
+
+        flex-direction: column;
+        justify-content:center;
+        row-gap: 48px;
+        transition: all .4s;
+    }
+    .navigation.active{
+        height: 100vh;
+    }
+    .navigation li a{
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
     .controler .music{
         display: none;
@@ -43,5 +68,19 @@
     }  
     .player .player_main{
         column-gap: 28px;
-    }   
+    }
+    .user {
+        max-width: 48px;
+    }  
+    .user span{
+        display: none;
+        visibility: hidden;
+    } 
+    header nav{
+        max-width: 0;
+    }
+    .header_content h1{
+        flex: 1;
+        text-align: center;
+    }
 }
