@@ -14,7 +14,7 @@ body{
 main {
     flex: 1;
     display: flex;
-    background-image: url('../img/anime.png');
+    background-image: linear-gradient(rgba(0,0,0,.66),rgba(0,0,0,.66)), url('../img/anime.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,3 +66,8 @@ main {
     font-size: 1.5rem;
     line-height: 1.75rem;
 }
+.music_mobile{
+    display: none;
+    visibility: hidden;
+}
+
