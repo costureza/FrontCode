@@ -58,7 +58,7 @@
             </div>
         </main>
         <footer>
-            <span class="timeline"></span>
+            <span id="timeline"></span>
             <div class="footer_content">
                 <div class="music">
                     <i class="fa-solid fa-heart"></i>
@@ -69,7 +69,10 @@
                     <i class="fa-solid fa-repeat"></i>
                     <div class="player_main">
                         <i class="fa-solid fa-chevron-left"></i>
-                        <button type="button"><i class="fa-solid fa-play"></i></button>
+                        <button type="button" onclick="playMusic()" id="button_play" class="play">
+                            <i class="fa-solid fa-play"></i>
+                            <i class="fa-solid fa-pause"></i>
+                        </button>
                         <i class="fa-solid fa-chevron-right"></i>
                     </div>
                     <i class="fa-solid fa-rotate-right"></i>

@@ -2,19 +2,19 @@ footer {
     display: flex;
     position: relative;
 }
-.timeline{
+#timeline{
     position: absolute;
     top: -2px;
     left: 0;
 
     display: flex;
     justify-content: flex-end;
-    width: 400px;
+    width: 0;
     height: 4px;
     
     background: linear-gradient(90.35deg, #4ac08f 2.49%, #2fb4ff 101.2%, #2fb4ff 101.2% );
 }
-.timeline::before{
+#timeline::before{
     content: '';
     display: block;
 
@@ -89,6 +89,14 @@ footer {
     font-size: 1rem;
     color: var(--secondary);
     margin: auto;
+
+    display: none;
+    opacity: 0;
+}
+.player .player_main button.play i:first-child,
+.player .player_main button.pause i:last-child{
+    opacity: 1;
+    display: block;
 }
 .controler{
     display: flex;
