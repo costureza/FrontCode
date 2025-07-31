@@ -68,12 +68,18 @@
                 <div class="player">
                     <i class="fa-solid fa-repeat"></i>
                     <div class="player_main">
-                        <i class="fa-solid fa-chevron-left"></i>
+                        <button type="button" onclick="changeMusic(-1)">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
                         <button type="button" onclick="playMusic()" id="button_play" class="play">
                             <i class="fa-solid fa-play"></i>
                             <i class="fa-solid fa-pause"></i>
                         </button>
-                        <i class="fa-solid fa-chevron-right"></i>
+
+                        <button type="button" onclick="changeMusic(+1)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>

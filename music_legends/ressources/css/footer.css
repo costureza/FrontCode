@@ -77,15 +77,19 @@ footer {
     align-items: center;
     column-gap: 36px;
 }
-
 .player .player_main button{
+    background: transparent;   
+}
+
+
+#button_play{
     display: flex;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background: var(--background-light);
 }
-.player .player_main button i{
+#button_play i{
     font-size: 1rem;
     color: var(--secondary);
     margin: auto;
@@ -93,8 +97,8 @@ footer {
     display: none;
     opacity: 0;
 }
-.player .player_main button.play i:first-child,
-.player .player_main button.pause i:last-child{
+#button_play.play i:first-child,
+#button_play.pause i:last-child{
     opacity: 1;
     display: block;
 }
