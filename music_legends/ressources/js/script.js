@@ -1,13 +1,16 @@
 const MAX_Time = 100;
 let time = 0;
 let music = 0;
+let musics = [];
 let isPlaying = false;
 let timeEvent = null;
 
-fetch("../musics.json").then(Response.json()).then(data=>{
-    musics = data;
-    changeMusic();
-});
+fetch("./musics.json")
+    .then(response => response.json())
+    .then(data => {
+        musics = data;
+        changeMusic();
+    });
 
 
 function handleToggle(){
@@ -21,11 +24,11 @@ function handleToggle(){
 function resetMusic(){
     time = 0;
     isPlaying = false;
-    chageIconbuttonPlay();
+    changeIconbuttonPlay();  
     clearInterval(timeEvent);
 }
 
-function chageIconbuttonPlay(){
+function changeIconbuttonPlay(){  
     const buttonPlay = document.getElementById('button_play');
     if(isPlaying) {
         buttonPlay.classList.remove('play');
@@ -39,7 +42,7 @@ function chageIconbuttonPlay(){
 function playMusic(){
     isPlaying = !isPlaying;
 
-    chageIconbuttonPlay ();
+    changeIconbuttonPlay();
     
     if(isPlaying){
         
@@ -59,4 +62,11 @@ function playMusic(){
 
 function changeMusic(direction){
     music = music + direction
+    
+    if(music<0){
+        music = musics.length - 1;
+    };        
+    if(music>musics.length - 1){
+        music = 0;
+    };
 }
