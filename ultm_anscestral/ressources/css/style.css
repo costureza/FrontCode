@@ -1,3 +1,9 @@
+@import url(./header.css);
+:root{
+    --branco:#ffffff;
+    --branco-light:#f8f8f850;
+    --preto:#222;
+}
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +15,10 @@
 body{
     width: 100%;
     height: 100vh;
-    background: #222;
-    color: #ffffff;
+    background: var(--preto);
+    color: var(--branco);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

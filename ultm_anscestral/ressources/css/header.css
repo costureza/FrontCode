@@ -1,102 +1,31 @@
-header{
-    display: flex;
-    width: 100%;
-}
-header nav, header .user{
-    width: 100%;
-    max-width: 330px;
-}
+.header{
+    width: 80%;
+    height: 176px;
 
-#button_toggle{    
-    display: none;
-    visibility: hidden;
-    flex-direction: column;
-    align-items: flex-start;
-    row-gap: 4px;
-
-    background: transparent;
-}
-
-#button_toggle span{
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: var(--primary);
-
-    transition: all .6s;
-}
-
-#button_toggle span:nth-child(even){
-    width: 18px;
-}
-#button_toggle.active span:nth-child(even){
-    opacity: 0;
-}
-#button_toggle.active span:nth-child(1){
-    transform: rotate(45deg) translateY(8px);
-}
-#button_toggle.active span:nth-child(3){
-    transform: rotate(-45deg) translateY(-8px);
-}
-
-.header_content{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 26px;
-    margin: 0 auto;
-    width: 100%;
-    max-width:1440px;
 }
-.header_content h1{
-    font-size: 2rem;
-    line-height: 2.753rem;
-    text-transform: uppercase;
+.header img{
+    width: 4rem;
 }
 
-#navigation{
+.header .nav-links{
+    display: flex;
+    gap: 24px;
+}
+.header .nav-links .link{
+    width: 40px;
+    height: 40px;
+    background: var(--branco-light);
+    border-radius: 50%;
+    border: .1rem solid var(--branco);
+
     display: flex;
     align-items: center;
-    column-gap: 56px;
+    justify-content: center;
 }
-#navigation li a,
-.user span
-{
-    font-size: 1.25rem;
-    line-height: 1.25rem;
-}
-#navigation li{
-    position: relative;
-}
-#navigation li.active::before{
-    content: '';
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-    height: 2px;
-    transform:  translateY(6px);
-    background: var(--secondary);
-}
-.user{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    column-gap: 16px;
-}
-.user_avatar{
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-
-    padding: 2px;
-    background: linear-gradient(90.35deg, #4ac08f 2.49%, #2fb4ff 101.2%, #2fb4ff 101.2% ) ;
-}
-.user_avatar img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+.header .nav-links .link i{
+    color: var(--branco);
 }
