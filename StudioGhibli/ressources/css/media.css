@@ -24,8 +24,12 @@
         height: 128px;
     }
 
+
     .header .logo {
         height: 64px;
+    }
+        #menu-btn{
+        display: initial;
     }
     .inlustracao{
         height: 240px;
@@ -59,6 +63,10 @@
     .header {
         justify-content: center;
     }
+        .nav-links.active {
+        top: 128px;
+    }
+    
 
     .header .nav-links {
         display: none;
@@ -68,6 +76,9 @@
 @media (max-width: 390px) {
     .header {
         height: 96px;
+    }
+        .nav-links.active {
+        top: 96px;
     }
 
     .header .logo {

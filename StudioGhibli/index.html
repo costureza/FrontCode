@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +10,11 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
     <header class="header">
         <a href="#"><img class="logo" src="./ressources/img/logo.svg" alt="logo"></a>
-        <nav class="nav-links">
+
+        <nav class="nav-links" id="main-nav">
             <a href="#" class="link"><i class="fa-brands fa-google"></i></a>
             <a href="#" class="link"><i class="fa-brands fa-facebook"></i></a>
             <a href="#" class="link"><i class="fa-brands fa-youtube"></i></a>
@@ -24,13 +23,19 @@
             <a href="#" class="link"><i class="fa-brands fa-tiktok"></i></a>
             <a href="#" class="link"><i class="fa-brands fa-twitch"></i></a>
         </nav>
+        
+        <div id="menu-btn" class="fas fa-bars"></div>
     </header>
+    
     <main>
         <section class="conteudo">
             <div class="descricao">
                 <h3 class="titulo-chapeu">HAYAQ MIYAZAKI</h3>
                 <h2 class="titulo">A VIAGEM DE CHIHIRO</h2>
-                <p>Chihiro e seus pais estão se mudando para uma cidade diferente. A caminho da nova casa, o pai decide pegar um atalho. Eles se deparam com uma mesa repleta de comida, embora ninguém esteja por perto. Chihiro sente o perigo, mas seus pais começam a comer. Quando anoitece, eles se transformam em porcos. Agora, apenas Chihiro pode salvá-los.</p>
+                <p>Chihiro e seus pais estão se mudando para uma cidade diferente. A caminho da nova casa, o pai decide
+                    pegar um atalho. Eles se deparam com uma mesa repleta de comida, embora ninguém esteja por perto.
+                    Chihiro sente o perigo, mas seus pais começam a comer. Quando anoitece, eles se transformam em
+                    porcos. Agora, apenas Chihiro pode salvá-los.</p>
                 <div class="botoes">
                     <div class="botao botao-primario">
                         <i class="fa-solid fa-play"></i> ASSISTA AGORA
@@ -38,14 +43,12 @@
                     <div class="botao botao-secudario">
                         ASSISTA O TRAILER
                     </div>
-                    
                 </div>
-
-
             </div>
             <div class="inlustracao"></div>
         </section>
     </main>
+    
+    <script src="./ressources/js/script.js"></script>
 </body>
-
 </html>
