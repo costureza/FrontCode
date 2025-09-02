@@ -68,16 +68,19 @@ main {
     font-size: 18px;
     font-weight: 700;
     gap: 8px;
+    transition: all ease .5s;
 }
 
 .botao-primario {
-    background-color: #f1a5b1;
+    background-color: var(--rosa);
     color: var(--preto);
 }
 
-.botao-primario:hover {
+.botao-primario:hover, 
+.botao-secudario:hover {
     background-color: var(--branco);
-    color: #f1a5b1;
+    color: var(--preto);
+    border-color: transparent;
 }
 
 .inlustracao {
@@ -85,4 +88,6 @@ main {
     height: 100%;
     background-image: url(../img/image.svg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
