@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap');
+
+:root{
+    --dark:#0C0C0C;
+    --rosa:#f12b45;
+    --green:#04d361;
+    --red: #ff3e3e;
+    --bg:#1a1a1a;
+    --dark_200:#212529;
+    --gray:#aeaeae;
+    --light:#f9f9f9;
+    --sora: "Sora", sans-serif;
+    --inter: "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+
+body{
+    background: var(--bg);
+    color: var(--light);
+    font-family: var(--inter);
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn{
+    display: inline-block;
+    width: 190px;
+    height: 60px;
+    cursor: pointer;
+}
+.btn_comprar{
+    margin: .5rem;
+    padding: .5rem;
+    background: transparent;
+    border: .1rem solid var(--rosa);
+    color: var(--light);
+    border-radius: 6px;
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    width: 600px;
+    height: auto;
+}
+.content h2{
+    font-family: var(--sora);
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+}
+.content h3{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--rosa);
+    margin-top: 30px;
+}
+.content p{
+    font-size: 26px;
+    line-height: 36px;
+    color: var(--gray);
+    margin-top: 60px;
+}
+
+form{
+    width: 600px;
+    height: auto;
+    margin-block: 40px;
+
+}
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input{
+    height: 60px;
+    border-radius: 4px;
+    background-color: var(--dark);
+    border: .1rem solid var(--dark_200);
+    color: var(--gray);
+    font-size: 28px;
+    padding-left: 10px;
+}
+
+label{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--gray);
+    padding-left: 2px;
+}
+.btn_enviar{
+    width: 100%;
+    background-color: var(--rosa);
+    color: var(--dark);
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

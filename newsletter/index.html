@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Newslleter </title>
+    <link rel="icon" href="./ressources/img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./ressources/css/style.css">
 </head>
+
 <body>
-    
+    <dialog class="modal_enviar">
+        <div class="modal_content">
+            <p>E-mail cadastrado com <span class="sucesso">sucesso</span></p>
+            <p>E-mail <span class="erro">não</span> cadastrado </p>
+            <button type="button" class="btn btn_fechar">Fechar</button>
+        </div>
+    </dialog>
+    <header>
+        <a href="https://github.com/costureza"><img src="./ressources/img/favicon-32x32.png" alt=""></a>
+        <button type="button" class="btn btn_comprar">COMPRAR E-BOOK</button>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Seja bem-vindo a sua melhor newsletter</h2>
+            <h3>Fique por dentro das novidades</h3>
+            <p>Preencha os campos para receber as notícias sobre programação.</p>
+
+            <form action="">
+                <div class="inputs">
+                    <label for="input_nome">Nome</label>
+                    <input type="text" class="input_nome">
+                </div>
+
+                <div class="inputs">
+                    <label for="input_email">E-mail</label>
+                    <input type="email" class="input_email">
+                </div>
+
+                <div class="buttons">
+                    <button class="btn btn_enviar" type="submit"> Enviar</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        Produzido por <a href="https://github.com/costureza"><img src="./ressources/img/favicon-32x32.png" alt=""></a>
+        &copy; 2025 | Inspirado no desafio eFront do Iuri Code
+    </footer>
+
+    <script src="./ressources/js/script.js"></script>
+
 </body>
+
 </html>
