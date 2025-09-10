@@ -30,7 +30,7 @@ body{
 
 header{
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -49,6 +49,11 @@ header{
     border: .1rem solid var(--rosa);
     color: var(--light);
     border-radius: 6px;
+    transition: all .5s ease;
+}
+.btn_comprar:hover{
+    background: var(--rosa);
+    
 }
 main{
     width: 100%;
@@ -66,27 +71,26 @@ main{
     font-size: 48px;
     font-weight: 600;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .content h3{
     font-size: 30px;
     font-weight: 400;
     text-align: center;
     color: var(--rosa);
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .content p{
     font-size: 26px;
     line-height: 36px;
     color: var(--gray);
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 form{
     width: 600px;
     height: auto;
-    margin-block: 40px;
-
+    margin-top: 20px;
 }
 .inputs{
     width: 100%;
@@ -111,13 +115,18 @@ label{
     color: var(--gray);
     padding-left: 2px;
 }
+
 .btn_enviar{
     width: 100%;
-    background-color: var(--rosa);
+    background: var(--rosa);
     color: var(--dark);
     border-radius: 4px;
     font-size: 24px;
     font-weight: bold;
+    transition: all .5s ease;
+}
+.btn_enviar:hover{
+    background: var(--green);
 }
 
 footer{
@@ -126,4 +135,49 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.modal_enviar{
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #0c0c0c50;
+}
+.modal_content{
+    width: 800px;
+    height: 300px;
+    background-color: var(--dark);
+    border: .1rem solid var(--dark_200);
+    border-radius: 4px;
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal_content p{
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+.btn_fechar{
+    width: 600px;
+    font-size: 24px;
+    font-weight: bold;
+    background: var(--green);
+}
+.sucesso{
+    color: var(--green);
+}
+.bg_sucesso{
+    background-color: var(--green);
+}
+.erro{
+    color: var(--red);
+}
+.bg_erro{
+    background-color: var(--red);
 }
