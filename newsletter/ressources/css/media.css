@@ -1,0 +1,90 @@
+@media (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    body,
+    header,
+    form,
+    footer {
+        width: 100%;
+    }
+
+    .content {
+        width: 100vh;
+        padding-inline: 20px;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 16px;
+        padding-inline: 20px;
+    }
+
+    .modal_content {
+        width: 90%;
+    }
+
+    .btn_fechar {
+        width: 90%;
+    }
+    input {
+        font-size: 16px;
+        height: 50px;
+    }
+    
+    .btn_enviar {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:480px) {
+    .content h2 {
+        font-size: 32px;
+    }
+
+    .content h3 {
+        font-size: 22px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .modal_content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal_content p {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width:320px) {
+    .btn_comprar {
+        width: 160px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content h3 {
+        display: none;
+    }
+
+    .content p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .modal_content p {
+        font-size: 18px;
+    }
+}

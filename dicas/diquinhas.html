@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diquinhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        ​A tag datalist especifica uma lista de opções predefinidas para um elemento input.
+        <input type="text" list="stack">
+        <datalist id="stack">
+            <option value="Rosa"></option>
+            <option value="Rosinha"></option>
+        </datalist>
+        O atributo id do elemento datalist deve ser igual ao atributo list do elemento input (isso os vincula).
+
+    </section>
+
+    <section>
+        O atributo 'contenteditable' indica se o elemento pode ser editável pelo usuário.
+
+        <p contenteditable="true">Rosa fodona vai sim arrumar emprego</p>
+
+        O atributo pode ter os seguidores valores:
+
+        - true ou uma string vazia, que indica que o elemento é editável.
+
+        - false, o que indica que o elemento não é editável.
+
+        Embora seus valores permitidos incluam true ou false, esse atributo é enumerado e não booleano. Dessa forma,
+        somente o atributo 'contenteditable' é valido como true.
+    </section>
+
+    <section>
+        O atributo 'draggable' indica se o elemento pode ser arrastado ou não.
+
+        <p draggable="true">Rosa empregada SIM</p>
+
+        O atributo pode ter os seguidores valores:
+
+        - true: o elemento pode ser arrastado.
+
+        - false: o elemento não pode ser arrastado.
+    </section>
+</body>
+
+</html>
