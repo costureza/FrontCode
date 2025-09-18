@@ -1,3 +1,6 @@
+:root{
+    color-scheme: light;
+}
 *{
     margin: 0;
     padding: 0;
@@ -39,4 +42,43 @@ div{
 a{
     color: greenyellow;
     background-color: crimson;
+}
+::selection{
+    background-color: cadetblue;
+    color: black;
+}
+.last{
+    text-align-last: right;
+}
+.letter::first-letter{
+    font-size: 4rem;
+    color: greenyellow;
+}
+.logoo{
+    -webkit-box-reflect: below;
+}
+.bola{
+    position: absolute;
+    inset: 80px;
+    background-color: goldenrod;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.txt:not(.txtt){
+    color: rebeccapurple;
+}
+.shape{
+    background-color: blue;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+}
+
+.selet{
+    user-select: none;
+}
+input{
+    caret-color: violet;
 }
